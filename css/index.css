@@ -51,11 +51,15 @@ a
 	border-radius: 20px;
 	text-shadow: 1px 1px 1px #000;
 }
-a:hover
+a:focus
 {
-	background: #ededed;
+	animation: first 0.5s;
+}
+@keyframes first
+{
+	50%{background: #ededed;
 	width: 90%;
 	display: block;
 	box-shadow: -2px -2px 2px 2px #c5c5c5, 2px 2px 2px 2px #fff;
-	border-radius: 20px;
+	border-radius: 20px;}
 }
