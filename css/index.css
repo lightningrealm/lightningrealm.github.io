@@ -42,12 +42,14 @@ ul
 }
 a
 {
+	text-decoration: none;
 	padding: 5px;
 	width: 90%;
 	display: block;
 	box-shadow: 2px 2px 2px 2px #c5c5c5,-2px -2px 2px 2px #fff;
 	margin-bottom: 15px;
 	border-radius: 20px;
+	text-shadow: 1px 1px 1px #000;
 }
 a:hover
 {
