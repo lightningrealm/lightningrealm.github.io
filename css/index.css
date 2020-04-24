@@ -41,6 +41,10 @@ body
 {
 	animation: color 5s;
 }
+#body-main-2
+{
+	text-align: center;
+}
 ul
 {
 	text-align: center;
