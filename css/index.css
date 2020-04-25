@@ -41,6 +41,7 @@ body
 }
 a
 {
+	color: black;
 	margin-top: 20px;
 	width: 80%;
 	margin-left: 10%;
@@ -58,7 +59,8 @@ a:focus
 }
 @keyframes first
 {
-	50%{background: #ededed;
+	50%{color: grey;
+	background: #ededed;
 	width: 80%;
 	left: 10%;
 	display: block;
