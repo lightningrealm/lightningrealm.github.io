@@ -18,6 +18,7 @@ body
 }
 #body-main
 {
+	text-algin: center;
 	margin-top: 20px;
 	width: 50%;
 	height: 100%;
@@ -33,7 +34,7 @@ body
 	height: 30px;
 	border-radius: 20px 20px 0px 0px;
 	box-shadow: 0px 0px 2px 2px #c5c5c5;
-	animation: background-image 5s;
+	animation: color 5s;
 }
 #body-main-1:hover
 {
