@@ -69,7 +69,7 @@ a:focus
 	width: 80%;
 	left: 10%;
 	display: block;
-	box-shadow: -2px -2px 5px 1px #E1E1E1, 2px 2px 5px 1px #fff;
+	box-shadow: -2px -2px 5px 1px #E1E1E1, 2px 2px 1px 1px #fff;
 	border-radius: 20px;}
 }
 @keyframes color
