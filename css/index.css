@@ -39,7 +39,7 @@ body
 #body-main-1:hover
 {
 	animation: color 5s infinite linear;
-	sanimation-play-state: paused;
+	animation-play-state: paused;
 }
 a
 {
