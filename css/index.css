@@ -41,7 +41,7 @@ body
 }
 #body-main-1:hover
 {
-	animation: color 5s infinite linear;
+	animation: color 10s infinite linear;
 	animation-play-state: paused;
 }
 a
