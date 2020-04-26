@@ -28,6 +28,7 @@ body
 }
 #body-main-1
 {
+	animation: color 5s infinite linear;
 	background-image: linear-gradient(to right ,#e66465,#9198e5);
 	text-align: center;
 	width: 100%;
@@ -38,6 +39,7 @@ body
 #body-main-1:hover
 {
 	animation: color 5s infinite linear;
+	sanimation-play-state: paused;
 }
 a
 {
