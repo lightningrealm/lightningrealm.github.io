@@ -10,14 +10,14 @@ h1
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius: 50px;
-	background: #ededed;
-	box-shadow: 2px 2px 5px 2px #E1E1E1,-2px -2px 5px 2px #FFF;
+	background: #DBE5EC;
+	box-shadow: 2px 2px 5px 2px #C4CCD1,-1px -1px 5px 2px #FFF;
 	animation:h1shadow 5s infinite linear;
 	animation-direction: alternate;
 }
 body
 {
-	background-color:#ededed;
+	background-color:#DBE5EC;
 }
 #body-main
 {
@@ -26,7 +26,7 @@ body
 	width: 50%;
 	height: 100%;
 	margin-left: 25%;
-	box-shadow: 2px 2px 5px 1px #E1E1E1,-2px -2px 5px 1px #fff;
+	box-shadow: 2px 2px 5px 1px #C4CCD1,-1px -1px 5px 1px #fff;
 	border-radius: 25px;
 }
 #body-main-1
@@ -37,7 +37,7 @@ body
 	width: 100%;
 	height: 30px;
 	border-radius: 20px 20px 0px 0px;
-	box-shadow: 2px 2px 5px 1px #E1E1E1,-2px -2px 5px 1px #FFF;
+	box-shadow: 2px 2px 5px 1px #E1E1E1,-1px -1px 5px 1px #FFF;
 }
 #body-main-1:hover
 {
@@ -54,7 +54,7 @@ a
 	padding-bottom: 5px;
 	padding-top: 5px;
 	display: block;
-	box-shadow: 2px 2px 5px 1px #E1E1E1,-2px -2px 5px 1px #fff;
+	box-shadow: 2px 2px 5px 1px #C4CCD1,-1px -1px 5px 1px #fff;
 	margin-bottom: 15px;
 	border-radius: 20px;
 }
@@ -65,11 +65,11 @@ a:focus
 @keyframes first
 {
 	50%{color: grey;
-	background: #ededed;
+	background: #DBE5EC;
 	width: 80%;
 	left: 10%;
 	display: block;
-	box-shadow: -2px -2px 5px 1px #E1E1E1, 2px 2px 1px 1px #fff;
+	box-shadow: -2px -2px 5px 1px #C4CCD1, 1px 1px 2px 1px #fff;
 	border-radius: 20px;}
 }
 @keyframes color
