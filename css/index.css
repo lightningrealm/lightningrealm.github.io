@@ -18,12 +18,9 @@ h1
 }
 hr
 {
-	background: #484A4C;
+	color: #484A4C;
 	width:80%;
-	border:4px;
-	color:#ededed;
 	box-shadow: 2px 2px 1px 1px #C4CCD1,-1px -1px 1px 1px #fff;
-	margin-bottom: 20px;
 }
 body
 {
