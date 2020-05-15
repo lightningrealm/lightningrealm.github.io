@@ -18,9 +18,9 @@ h1
 }
 hr
 {
-	color: #484A4C;
+	border:1px #DBE5EC solid;
 	width:80%;
-	box-shadow: 2px 2px 1px 1px #C4CCD1,-1px -1px 1px 1px #fff;
+	box-shadow: 1px 1px 1px 1px #C4CCD1,-1px -1px 1px 1px #fff;
 }
 body
 {
@@ -97,4 +97,9 @@ a:focus
 	to{
 		text-shadow: 1px 1px 3px #fff;
 	}
+}
+@keyframes w{
+  50%{
+  	color: grey;
+  }
 }
