@@ -18,6 +18,8 @@ h1
 }
 hr
 {
+	animation: hrcolor 15s infinite linear;
+	animation-direction: alternate;
 	border:1px #DBE5EC solid;
 	width:80%;
 	box-shadow: 1px 1px 1px 1px #C4CCD1,-1px -1px 1px 1px #fff;
@@ -80,6 +82,20 @@ a:focus
 	display: block;
 	box-shadow: -2px -2px 5px 1px #C4CCD1, 1px 1px 2px 1px #fff;
 	border-radius: 20px;}
+}
+@keyframes hrcolor
+{
+	from
+	{
+		border:1px #DBE5EC solid;
+	width:80%;
+	box-shadow: 1px 1px 1px 1px #C4CCD1,-1px -1px 1px 1px #fff;
+	}
+	to{
+		border:1px #DBE5EC solid;
+	width:80%;
+	box-shadow: -1px -1px 1px 1px #C4CCD1, 1px 1px 1px 1px #fff;
+	}
 }
 @keyframes color
 {
