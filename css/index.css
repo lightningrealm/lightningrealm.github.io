@@ -28,6 +28,7 @@ body
 }
 #body-main
 {
+	background-color:#DBE5EC;
 	margin-top: 20px;
 	text-align: center;
 	width: 50%;
@@ -102,4 +103,8 @@ a:focus
   50%{
   	color: grey;
   }
+}
+center
+{
+	margin-top: 10px;
 }
