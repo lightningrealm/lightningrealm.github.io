@@ -18,11 +18,17 @@ h1
 }
 hr
 {
-	animation: hrcolor 15s infinite linear;
-	animation-direction: alternate;
+	animation: hrcolor 5s infinite linear;
+	animation-play-state: paused;
 	border:1px #DBE5EC solid;
 	width:80%;
+	text-align: center;
 	box-shadow: 1px 1px 1px 1px #C4CCD1,-1px -1px 1px 1px #fff;
+}
+hr:hover
+{
+	animation: hrcolor 5s infinite linear;
+	animation-direction: alternate;
 }
 body
 {
