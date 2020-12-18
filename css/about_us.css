@@ -21,6 +21,25 @@ a
 	padding: 10px;
 }
 
+#developer
+{
+	text-align: center;
+	background: #DBE5EC;
+	font-weight: bold;
+	color: #484A4C;
+	margin-top: 20px;
+	width: 50%;
+	margin-left: 25%;
+	text-decoration: none;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	display: block;
+	box-shadow: 2px 2px 5px 1px #C4CCD1,-1px -1px 5px 1px #fff;
+	margin-bottom: 15px;
+	border-radius: 20px;
+	padding: 10px;
+}
+
 body
 {
 	cursor: default;
