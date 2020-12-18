@@ -127,14 +127,22 @@ a:focus
   	color: grey;
   }
 }
+@keyframes centercolor
+{
+	from{
+	box-shadow: 0 1px 2px 0 #C4CCD1, 0 1.5px 5px 0 #C4CCD1;}
+	to{
+	box-shadow: 0 4px 8px 0 #C4CCD1, 0 6px 20px 0 #C4CCD1;}
+}
 center
 {
+	animation: centercolor 5s infinite linear;
+	animation-direction: alternate;
 	color: #5B5E61;
 	width: 30%;
 	border-radius: 3px;
 	margin-left: 35%;
 	text-align: center;
 	font-weight: bold;
-	box-shadow: 0 4px 8px 0 #C4CCD1, 0 6px 20px 0 #C4CCD1;
 	margin-top: 40px;
 }
