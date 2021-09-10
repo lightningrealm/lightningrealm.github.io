@@ -1,57 +1,51 @@
-h1{
-	color: #DBE5EC;
-	text-shadow: 2px 2px 3px #C4CCD1,-1px -1px 5px #EAF4FB;
+h1 {
+    color: #516f8d;
+    text-shadow: 2px 2px 3px #C4CCD1, -1px -1px 5px #EAF4FB;
 }
 
-a
-{
-	color: #516f8d;
-	background: #DBE5EC;
-	font-weight: bold;
-	color: #484A4C;
-	margin-top: 20px;
-	width: 80%;
-	margin-left: 10%;
-	text-decoration: none;
-	padding-bottom: 5px;
-	padding-top: 5px;
-	display: block;
-	box-shadow: 2px 2px 5px 1px #C4CCD1,-1px -1px 5px 1px #fff;
-	margin-bottom: 15px;
-	border-radius: 20px;
-	padding: 10px;
+a {
+    color: #516f8d;
+    background: #DBE5EC;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: block;
+    box-shadow: 2px 2px 5px 1px #C4CCD1, -1px -1px 5px 1px #fff;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
-#developer
-{
-	color: #516f8d;
-	text-align: center;
-	background: #DBE5EC;
-	font-weight: bold;
-	color: #484A4C;
-	margin-top: 20px;
-	width: 50%;
-	margin-left: 25%;
-	text-decoration: none;
-	padding-bottom: 5px;
-	padding-top: 5px;
-	display: block;
-	box-shadow: 2px 2px 5px 1px #C4CCD1,-1px -1px 5px 1px #fff;
-	margin-bottom: 15px;
-	border-radius: 20px;
-	padding: 10px;
+#developer {
+    color: #516f8d;
+    text-align: center;
+    background: #DBE5EC;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 25%;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: block;
+    box-shadow: 2px 2px 5px 1px #C4CCD1, -1px -1px 5px 1px #fff;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
-body
-{
-	cursor: default;
-	background-color:#DBE5EC;
+body {
+    cursor: default;
+    background-color: #DBE5EC;
 }
 
-hr
-{
-	border:1px #DBE5EC solid;
-	width:80%;
-	text-align: center;	
-	box-shadow: 1px 1px 1px 1px #C4CCD1,-1px -1px 1px 1px #fff;
+hr {
+    border: 1px #DBE5EC solid;
+    width: 80%;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #C4CCD1, -1px -1px 1px 1px #fff;
 }
