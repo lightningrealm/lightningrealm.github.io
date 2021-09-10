@@ -5,16 +5,18 @@
 }
 
 h1 {
-    color: #484A4C;
+    color: #516f8d;
     text-shadow: 1px 1px 2px #EAF4FB;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 50px;
     background: #DBE5EC;
-    box-shadow: 2px 2px 3px 2px #C4CCD1, -1px -1px 5px 2px #FFF;
+    box-shadow: 2px 2px 5px 2px #C4CCD1, -2px -2px 5px 2px #FFF;
     animation: h1shadow 5s infinite linear;
     animation-direction: alternate;
 }
+
+h1:hover {}
 
 hr {
     animation: hrcolor 5s infinite linear;
@@ -63,7 +65,7 @@ body {
 
 a {
     font-weight: bold;
-    color: #484A4C;
+    color: #516f8d;
     margin-top: 20px;
     width: 80%;
     margin-left: 10%;
@@ -116,9 +118,13 @@ a:focus {
 
 @keyframes h1shadow {
     from {
+        background: #DBE5EC;
+        box-shadow: 2px 2px 5px 2px #C4CCD1, -2px -2px 5px 2px #FFF;
         text-shadow: 1px 1px 2px #EAF4FB;
     }
     to {
+        background: #c7d2da;
+        box-shadow: 2px 2px 5px 2px #d5dde2, -2px -2px 5px 2px #d5dde2;
         text-shadow: 1px 1px 3px #fff;
     }
 }
@@ -141,7 +147,7 @@ a:focus {
 center {
     animation: centercolor 5s infinite linear;
     animation-direction: alternate;
-    color: #5B5E61;
+    color: #516f8d;
     width: 30%;
     border-radius: 3px;
     margin-left: 35%;
