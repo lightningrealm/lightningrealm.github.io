@@ -151,6 +151,7 @@ center {
 }
 
 #left {
+    width: 10%;
     display: inline-block;
     text-align: center;
 }
