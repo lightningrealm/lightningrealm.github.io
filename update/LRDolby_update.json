@@ -1,6 +1,6 @@
 {
-	"version": "通用杜比1.7",
-	"versionCode": 2,
+	"version": "1.7",
+	"versionCode": 7,
 	"zipUrl": "https://lightningrealm.github.io./magisk/dolby.zip",
 	"changelog": "https://lightningrealm.github.io./update/LRDolby_changelog.md"
 }
