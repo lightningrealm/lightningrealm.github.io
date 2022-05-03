@@ -20,6 +20,22 @@ a {
     padding: 10px;
 }
 
+a:focus {
+    animation: first 0.5s;
+}
+
+@keyframes first {
+    50% {
+        color: grey;
+        background: #DBE5EC;
+        width: 80%;
+        left: 10%;
+        display: block;
+        box-shadow: -2px -2px 5px 1px #C4CCD1, 1px 1px 2px 1px #fff;
+        border-radius: 20px;
+    }
+}
+
 #developer {
     color: #516f8d;
     text-align: center;
