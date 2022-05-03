@@ -38,6 +38,24 @@ a {
     padding: 10px;
 }
 
+#content {
+    color: #516f8d;
+    text-align: center;
+    background: #DBE5EC;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 15%;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: block;
+    box-shadow: 2px 2px 5px 1px #C4CCD1, -1px -1px 5px 1px #fff;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
 body {
     cursor: default;
     background-color: #DBE5EC;
@@ -49,3 +67,5 @@ hr {
     text-align: center;
     box-shadow: 1px 1px 1px 1px #C4CCD1, -1px -1px 1px 1px #fff;
 }
+
+
