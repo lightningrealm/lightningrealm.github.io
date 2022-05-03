@@ -84,4 +84,8 @@ hr {
     box-shadow: 1px 1px 1px 1px #C4CCD1, -1px -1px 1px 1px #fff;
 }
 
+center {
+    color: #516f8d;
+    text-shadow: 2px 2px 3px #C4CCD1, -1px -1px 5px #EAF4FB;
+}
 
