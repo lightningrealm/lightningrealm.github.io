@@ -145,18 +145,8 @@ a:focus {
 }
 
 center {
-    text-align: center;
-    background-color: #DBE5EC;
-    animation: centercolor 5s infinite linear;
-    animation-direction: alternate;
     color: #516f8d;
-    text-shadow: 1px 1px 2px #C4CCD1, -1px -1px 2px #EAF4FB;
-    width: 30%;
-    border-radius: 3px;
-    margin-left: 35%;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 40px;
+    text-shadow: 2px 2px 3px #C4CCD1, -1px -1px 5px #EAF4FB;
 }
 
 #left {
