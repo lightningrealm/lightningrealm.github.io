@@ -1,0 +1,269 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机点名生成</title>
+ 
+    <style>
+        /* 页面css样式 */
+        .wrapper {
+            width: 800px;
+            margin: 20px auto;
+            border: 5px #DBE5EC solid;
+            box-shadow: 1px 1px 1px 1px #C4CCD1, -1px -1px 1px 1px #fff;
+            text-align: center;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+        }
+ 
+        .box li {
+            vertical-align: top;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+            background-color: #DBE5EC;
+            font-weight: bold;
+            color: #516f8d;
+            text-shadow: 1px 1px 2px #C4CCD1, -1px -1px 2px #EAF4FB;
+            box-shadow: 2px 2px 5px 1px #C4CCD1, -1px -1px 5px 1px #fff;
+        }
+         
+        .wrapper button {
+            border: none;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none;
+            margin-top: 20px;
+            font-weight: bolder;
+            color: #333;
+            background-color: #6495ED;
+        }
+ 
+        .wrapper button {
+            display: inline-block;
+        }
+ 
+       
+body {
+    cursor: default;
+    background-color: #DBE5EC;
+}
+
+button {
+    background-color: #DBE5EC;
+    font-weight: bold;
+    color: #516f8d;
+    text-shadow: 1px 1px 2px #C4CCD1, -1px -1px 2px #EAF4FB;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: block;
+    box-shadow: 2px 2px 5px 1px #C4CCD1, -1px -1px 5px 1px #fff;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+button:focus {
+    animation: first 0.5s;
+}
+
+input {
+    background-color: #DBE5EC;
+    font-weight: bold;
+    color: #516f8d;
+    text-shadow: 1px 1px 2px #C4CCD1, -1px -1px 2px #EAF4FB;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: block;
+    box-shadow: 2px 2px 5px 1px #C4CCD1, -1px -1px 5px 1px #fff;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+input:focus {
+    animation: first 0.5s;
+}
+
+label {
+    background-color: #DBE5EC;
+    font-weight: bold;
+    color: #516f8d;
+    text-shadow: 1px 1px 2px #C4CCD1, -1px -1px 2px #EAF4FB;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: block;
+    box-shadow: 2px 2px 5px 1px #C4CCD1, -1px -1px 5px 1px #fff;
+    margin-bottom: 15px;
+    border-radius: 50px;
+}
+
+label:focus {
+    animation: first 0.5s;
+}
+
+anim1{
+     animation: first 0.25s;
+}
+
+@keyframes first {
+    50% {
+        color: grey;
+        background: #DBE5EC;
+        display: block;
+        box-shadow: -2px -2px 5px 1px #C4CCD1, 1px 1px 2px 1px #fff;
+        border-radius: 20px;
+    }
+}
+
+h1{
+    color: #516f8d;
+    text-shadow: 2px 2px 3px #C4CCD1, -1px -1px 5px #EAF4FB;
+}
+
+h4{ 
+    width: auto;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    color: #516f8d;
+    text-shadow: 2px 2px 3px #C4CCD1, -1px -1px 5px #EAF4FB;
+    background-color: #DBE5EC;
+    font-weight: bold;
+    color: #516f8d;
+    text-shadow: 1px 1px 2px #C4CCD1, -1px -1px 2px #EAF4FB;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 2px 2px 5px 1px #C4CCD1, -1px -1px 5px 1px #fff;
+    margin-bottom: 15px;
+    border-radius: 50px;
+}
+.top{
+    width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h5{ 
+    margin-right: 10px;
+    color: #516f8d;
+    font-weight: bold;
+    color: #516f8d;
+    text-shadow: 1px 1px 2px #C4CCD1, -1px -1px 2px #EAF4FB;
+    text-decoration: none;
+}
+    </style>
+ 
+</head>
+ 
+<body>
+    <div class="top">
+        <h4 style="width: 50px;margin-right: 10px;">提示</h4>
+        <h4>不同内容请用英文逗号隔开，请选用txt格式进行导入</h4>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="wrapper">
+     <h1 align="center">随机点名</h1>
+
+     <input type="file" name="file" style="display: none;" id="filePicker"/>
+     <label for="filePicker">选择文本</label>
+<div id = "div1">
+</div>
+<input type="button" value = "显示"  onclick="show()"/>
+
+        <h6 id="data" align="right"></h6>
+        <ul class="box"></ul>
+        <button class="start">开始</button>
+        <button class="stop">停止</button>
+    </div>
+</body>
+ 
+<script>
+    function show()
+{
+    var reader = new FileReader();
+    reader.onload = function() 
+    {
+        alert(this.result)
+        
+        //定义全局变量方便引用
+    var boxUl = document.getElementsByClassName('box')[0];
+    var start = document.getElementsByClassName('start')[0];
+    var stop = document.getElementsByClassName('stop')[0];
+    var oLi = document.getElementsByTagName('li');
+    //增加变量，防手贱
+    var selecting = "false";
+ 
+    //数据准备
+    var nameString = new String(this.result);
+    var nameArr = nameString.split(",");
+    var str = "";
+    for (let i = 0; i < nameArr.length; i++) {
+        str += "<li >" + nameArr[i] + "</li>"
+    }
+    boxUl.innerHTML = str;
+ 
+    //添加开始按钮的点击事件
+    var timer = null;
+    start.onclick = function () {
+        if (selecting=="true"){
+         
+}else{
+        selecting = "true";
+        // 设置定时器
+        timer = setInterval(function () {
+ 
+            // 根据数组长度范围生成随机数
+            var i = Math.floor(Math.random() * nameArr.length);
+            // 先通过for循环清空所有style属性
+            for (var j = 0; j < oLi.length; j++) {
+                oLi[j].removeAttribute("style");
+            }
+            // 为随机选择的li颜色属性
+            oLi[i].style.background = "#6495ED";  //蓝色
+        }, 150);
+}
+    };
+    // 点击停止
+    stop.onclick = function () {
+        selecting = "false";
+        // 清空定时器停止点名
+        clearInterval(timer);
+    }
+    //页面初始化时间设置
+    window.onload = function () {
+        datatime();
+    }
+    //页面时间动态刷新
+    setInterval(datatime, 1000);
+ 
+    function datatime() {
+        let data = new Date();
+        let dataString ="<h5>现在是北京时间：" + data.toLocaleString()+"/<h5>";
+        document.getElementById("data").innerHTML = dataString;
+        
+}
+    }
+    var f = document.getElementById("filePicker").files[0];
+    reader.readAsText(f);
+    
+    
+}
+</script>
