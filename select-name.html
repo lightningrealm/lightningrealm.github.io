@@ -118,8 +118,10 @@ label {
     border-radius: 50px;
 }
 
-label:focus {
-    animation: first 0.5s;
+#innerblock {
+    background: #DBE5EC;
+        box-shadow: -2px -2px 5px 1px #C4CCD1, 1px 1px 2px 1px #fff;
+        border-radius: 20px;
 }
 
 anim1{
@@ -129,6 +131,16 @@ anim1{
 @keyframes first {
     50% {
         color: grey;
+        background: #DBE5EC;
+        display: block;
+        box-shadow: -2px -2px 5px 1px #C4CCD1, 1px 1px 2px 1px #fff;
+        border-radius: 20px;
+    }
+}
+
+@keyframes selecting {
+    50% {
+        color: rgb(128, 128, 128);
         background: #DBE5EC;
         display: block;
         box-shadow: -2px -2px 5px 1px #C4CCD1, 1px 1px 2px 1px #fff;
@@ -230,6 +242,7 @@ h5{
          
 }else{
         selecting = "true";
+
         // 设置定时器
         timer = setInterval(function () {
  
@@ -241,6 +254,8 @@ h5{
             }
             // 为随机选择的li颜色属性
             oLi[i].style.background = "#6495ED";  //蓝色
+            //oLi[i].style.boxShadow = "-2px -2px 5px 1px #C4CCD1, 1px 1px 2px 1px #fff";
+            oLi[i].style.animation =  "selecting 1.0s";
         }, 150);
 }
     };
@@ -249,7 +264,7 @@ h5{
         selecting = "false";
         // 清空定时器停止点名
         clearInterval(timer);
-    }
+           }
     //页面初始化时间设置
     window.onload = function () {
         datatime();
