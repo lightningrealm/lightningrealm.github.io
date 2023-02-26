@@ -2,6 +2,7 @@
 <br/>
 一个普通人的个人网站
 <br/>
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<br/>
 <a>静下来，一切都会变好</a>
+<br/>
 <a>2020.7.22.□□□ :)</a>
