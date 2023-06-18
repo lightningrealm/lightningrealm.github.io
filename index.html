@@ -16,14 +16,15 @@
     <div id="header">
             <ul>
                 <h1 id="title">LightningRealm</h1>
-                <li><a href="#home">首页</a></li>
-                <li><a href="#news">新闻动态</a></li>
-                <li><a href="#contact">联系我们</a></li>
-                <li><a href="#about">关于我们</a></li>
+                <li><a href="javascript:scrollTo(0,0)">首页</a></li>
+                <li><a href="#why_us">为什么选择我们</a></li>
+                <li><a href="#contact_us">联系我们</a></li>
+                <li><a href="#about_us">关于我们</a></li>
              </ul>   
     </div>
     
-    <div id="left" name="home">
+    <div id="body">
+    <div id="left">
         <div class="card">
             <div class="tools">
               <div class="circle">
@@ -126,27 +127,130 @@
           <div id="body-main-1">
           <!--装饰作用-->
           </div>
-
-          <br/>
-          <center>CopyRight LightningRealm 2023</center>
+      
 
     </div>
+  </div>
+
+  <div id="bottom">
+
+    <div class="card" id="why_us">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div> &ensp;<h>为什么选择我们</h>
+      </div>
+      <div class="card__content">
+        <h6>我们有丰富的软件资源，有4年的历史，从不同领域出发到不同领域汇合，用心制作，只为您有更好的体验</h6>
+        <Br>
+      </div>
+    </div>
+
+
+    <div id="bottom_content">
+    <div id="left">
+    <div class="card" id="about_us">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div> &ensp;<h>关于我们</h>
+      </div>
+      <div class="card__content">
+        <h5>制作人员</h5>
+        <b id="developer">1`雷电君主<br/>
+        2`时光<br/>
+        3`圣奇<br/>
+        4`Ryan<br/>
+        5`拉夫上校</b><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="right">
+    <div class="card" id="contact_us">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div> &ensp;<h>联系我们</h>
+      </div>
+      <div class="card__content">
+        <h5>联系方式</h5>
+        <a href="#">暂无</a><br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <br/>
+    <div class="card">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+        <center>CopyRight LightningRealm 2023</center>
+      </div>
+    </div>
+  
+  </div>
     
 </body>
 <script type="text/javascript" src="js/index.js"></script>
 
-<script type="text/javascript">
-  var system ={};
-     var p = navigator.platform;
-     system.win = p.indexOf("Win") == 0;
-     system.mac = p.indexOf("Mac") == 0;
-     system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
-     if(system.win||system.mac||system.xll){//如果是电脑跳转到
-             window.location.href="#";
-     }else{  //如果是手机,跳转到
-            window.location.href="old_index.html";
-     }
-</script>    
+<script>
+		var os = function () {
+			var ua = navigator.userAgent,
+				isWindowsPhone = /(?:Windows Phone)/.test(ua),
+				isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+				isAndroid = /(?:Android)/.test(ua),
+				isFireFox = /(?:Firefox)/.test(ua),
+				isChrome = /(?:Chrome|CriOS)/.test(ua),
+				isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox &&
+					/(?:Tablet)/.test(ua)),
+				isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+				isPc = !isPhone && !isAndroid && !isSymbian;
+			return {
+				isTablet: isTablet,
+				isPhone: isPhone,
+				isAndroid: isAndroid,
+				isPc: isPc
+			};
+		}();
+		console.log('os', os)
+		if (os.isAndroid || os.isPhone) {
+			// 手机
+			window.location.href = "old_index.html";
+ 
+		} else if (os.isTablet) {
+			// 平板
+		} else if (os.isPc) {
+			// 电脑
+		}
+	</script>   
 
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
