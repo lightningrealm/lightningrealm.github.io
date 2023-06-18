@@ -1,0 +1,55 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name=“Keywords” content="雷电领域,lightningrealm,拉夫上校" />
+    <meta name=“description” content="雷电领域,lightningrealm,拉夫上校,破解" />
+    <meta name="baidu-site-verification" content="code-orergS2Hl2" />
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+    <meta charset="utf-8" />
+    <title>雷电领域</title>
+</head>
+<body>
+    <div id="body">
+<div class="loader">
+    <div class="blue">
+  </div></div>
+  <br>
+  <center>加载中...</center>
+  <center>Loading...</center>
+</div>
+</body>
+<script>
+    setTimeout(function () {
+    // 这里就是处理的事件
+
+    var os = function () {
+        var ua = navigator.userAgent,
+            isWindowsPhone = /(?:Windows Phone)/.test(ua),
+            isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+            isAndroid = /(?:Android)/.test(ua),
+            isFireFox = /(?:Firefox)/.test(ua),
+            isChrome = /(?:Chrome|CriOS)/.test(ua),
+            isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox &&
+                /(?:Tablet)/.test(ua)),
+            isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+            isPc = !isPhone && !isAndroid && !isSymbian;
+        return {
+            isTablet: isTablet,
+            isPhone: isPhone,
+            isAndroid: isAndroid,
+            isPc: isPc
+        };
+    }();
+    console.log('os', os)
+    if (os.isAndroid || os.isPhone) {
+        // 手机
+        window.location.href = "old_index.html";
+
+    } else if (os.isTablet) {
+        // 平板
+        window.location.href = "new_index.html";
+    } else if (os.isPc) {
+        // 电脑
+        window.location.href = "new_index.html";
+    }
+}, 2000);
+</script>
