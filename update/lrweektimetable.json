@@ -1,5 +1,7 @@
-{"version":1.05,
- "newcontent":"最新版本：1.05\n
+{"version":1.06,
+ "newcontent":"最新版本：1.06\n
+ 修复了周数的问题\n
+ ui界面微调\n
  更新了安卓12以下的md3 ui\n
  修复了因时区和周始日带来的周数错误",
  "updateurl":"https://lightningrealm.github.io/"}
