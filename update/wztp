@@ -1,0 +1,8 @@
+{
+  "versionName": 1.03,
+  "appVersion": 1,
+  "dbVersion": 1,
+  "title": "有新更新啦",
+  "announcement": "更换api",
+  "enforceUpdate": false
+}
